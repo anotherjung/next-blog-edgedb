@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prebuild": "npx edgeql-js"
+    "prebuild": "npx @edgedb/generate edgeql-js"
   },
   "dependencies": {
     "@types/node": "18.11.9",
