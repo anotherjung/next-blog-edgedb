@@ -5,6 +5,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import {useState, useEffect} from 'react';
 import {Posts} from "./api/post";
+import Link from 'next/link';
 
 const HomePage: NextPage = () => {
   const [posts, setPosts] = useState<Posts | null>(null);
@@ -24,17 +25,18 @@ const HomePage: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Blog</h1>
+        <h1 className={styles.title}>Blog Posts</h1>
         <div style={{height: '50px'}}></div>
         {posts.map((post) => {
           return (
-            <a href={`/post/${post.id}`} key={post.id}>
+            <Link href={`/post/${post.id}`} key={post.id}>
               <div className={styles.card}>
                 <p>{post.title}</p>
               </div>
-            </a>
+            </Link>
           );
         })}
+        <div className={styles.card}><Link href="/playlist">My Movie Playlist</Link></div>
       </main>
     </div>
   );
