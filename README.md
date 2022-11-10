@@ -55,7 +55,7 @@ WIP
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-We are going with a reverse development.  Inital development will fail. Create ENV with your Kubernetes. add script to package.json 
+We are going with a reverse development.  Inital development will fail. Create ENV with your Kubernetes. Add script to package.json 
 
 ```bash
     "prebuild": "npx @edgedb/generate edgeql-js"
