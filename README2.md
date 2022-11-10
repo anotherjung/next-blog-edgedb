@@ -107,3 +107,11 @@ touch movie/[id].tsx
 ```
 
 
+## deploy migration 
+
+```bash
+edgedb -I gcp_instance migrate
+```
+
+
+
