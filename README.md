@@ -49,7 +49,7 @@ It easier to use both Google Cloud Console & CLI & VS Code Extension.  Check you
 
 [EdgeDB Guide to Google Cloud Development](https://www.edgedb.com/docs/guides/deployment/gcp)
 
-## Add data to 
+## Add data to production
 
 ```bash
 edgedb -I gcp_instance
