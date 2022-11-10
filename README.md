@@ -41,13 +41,26 @@ You can check out [The Edgedb Github repo](https://github.com/edgedb/edgedb)
 edgedb ui
 ```
 
-## Create SQL using Kubernetes 
+## Create Production Database 
 
-WIP
+Create SQL using Kubernetes. Test Data cost 0.01 per day. 
 
-Test Data cost 0.01 per day. 
+It easier to use both Google Cloud Console & CLI & VS Code Extension.  Check your enabled services and use commands in VS Code.
 
 [EdgeDB Guide to Google Cloud Development](https://www.edgedb.com/docs/guides/deployment/gcp)
+
+## Add data to 
+
+```bash
+edgedb -I gcp_instance
+```
+
+```bash
+insert BlogPost {
+  title := “Postgres DB on GCloud”,
+  content := “My first Postgres DB on GCloud, Yeah!”
+};
+```
 
 ## Deploy on Vercel
 
