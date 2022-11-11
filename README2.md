@@ -60,9 +60,7 @@ one of many way REPL uing UI.
 insert
 
 ```javascript
-insert Movie {
-  title := "Dune"
-};
+insert Movie { title := "Dune" };
 ```
 
 Checkout Data Explorer to see a new row.  You might need a quick browser refresh.  
@@ -79,6 +77,8 @@ set {
   }
 };
 ```
+
+
 
 check Data Explore for new expand arrow.  You should see a down arrow before Title Dune. Clicking arrow will show their linked objects. 
 
@@ -113,5 +113,14 @@ touch movie/[id].tsx
 edgedb -I gcp_instance migrate
 ```
 
+## deploy vercel
+
+## add data to production
+
+``bash
+edgedb -I gcp_instance
+```
+
+see above for previous example to insert, update, set
 
 

@@ -12,6 +12,7 @@ export const getServerSideProps = async (
     .select(e.Movie, (movie) => ({
       id: true,
       title: true,
+      actors: { name:true },
       filter: e.op(movie.id, '=', e.uuid(context!.params!.id as string)),
     }))
     .run(client);
@@ -20,8 +21,9 @@ export const getServerSideProps = async (
 
 export type GetMovie = InferGetServerSidePropsType<typeof getServerSideProps>;
 
-const Post: React.FC<GetMovie> = (props) => {
-  console.log(1,props.movie[0])
+const Movie: React.FC<GetMovie> = (props) => {
+  const movie = props.movie[0];
+  const actors = movie.actors;
   return (
     <div
       style={{
@@ -31,11 +33,12 @@ const Post: React.FC<GetMovie> = (props) => {
         maxWidth: '600px',
       }}
     >
-      <h1 style={{padding: '50px 0px'}}>{props.movie[0].title}</h1>
-      <p style={{color: '#66006'}}>{props.movie[0].id}</p>
+      <h1 >Title: {movie.title}</h1>
+      <p>Cast:</p>
+      {actors.map((actor)=>(<p key={actor.name}>{actor.name}</p>))}
       <Link href="/">Back to home</Link>
     </div>
   );
 };
 
-export default Post;
+export default Movie;

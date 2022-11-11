@@ -14,7 +14,6 @@ const MoviePage: NextPage = () => {
       .then(setMovies);
   }, []);
   if (!movies) return <p>Loading...</p>;
-console.log(1,movies)
   return (
     <div className={styles.container}>
       <Head>
@@ -26,11 +25,11 @@ console.log(1,movies)
       <main className={styles.main}>
         <h1 className={styles.title}>My Movies</h1>
         <div style={{height: '50px'}}></div>
-        {movies.map((title) => {
+        {movies.map((movie) => {
           return (
-            <a href={`/movie/${title.id}`} key={title.id}>
+            <a href={`/movie/${movie.id}`} key={movie.id}>
               <div className={styles.card}>
-                <p>{title.title}</p>
+                <p>{movie.title}</p>
               </div>
             </a>
           );

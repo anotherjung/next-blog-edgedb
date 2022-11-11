@@ -7,6 +7,7 @@ export const client = createClient();
 const selectMovies = e.select(e.Movie, () => ({
   id: true,
   title: true,
+  actors: { name: true },
 }));
 
 export type Movies = $infer<typeof selectMovies>;
