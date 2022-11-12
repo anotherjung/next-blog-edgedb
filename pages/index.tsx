@@ -17,6 +17,7 @@ const HomePage: NextPage = () => {
   if (!posts) return <p>Loading...</p>;
 
   return (
+    <>
     <div className={styles.container}>
       <Head>
         <title>My Blog</title>
@@ -39,6 +40,8 @@ const HomePage: NextPage = () => {
         <div className={styles.card}><Link href="/playlist">My Movie Playlist</Link></div>
       </main>
     </div>
+    </>
+
   );
 };
 
