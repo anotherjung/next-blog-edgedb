@@ -1,8 +1,8 @@
 import React from 'react';
 import {GetServerSidePropsContext, InferGetServerSidePropsType} from 'next';
-
+import styles from '@/styles/Home.module.css';
 import {client} from '../api/movie';
-import e from '../../dbschema/edgeql-js';
+import e from '@/dbschema/edgeql-js';
 import Link from 'next/link';
 
 export const getServerSideProps = async (
