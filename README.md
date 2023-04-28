@@ -4,16 +4,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 We are using [EdgeDB](https://www.edgedb.com/) database hosted on [Google Cloud kubernetes](https://console.cloud.google.com/kubernetes).
 
-## Getting Started
+# Getting Started
 
-First, run the development server:
-
+## 1: run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
@@ -34,6 +32,21 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ## Learn More
 
 You can check out [The Edgedb Github repo](https://github.com/edgedb/edgedb)
+
+# 2: run db server
+```bash
+edgedb project init
+```
+
+```bash
+edgedb project init
+```
+
+# 3: create typescript code
+```bash
+npx @edgedb/generate edgeql-js
+```
+
 
 ## Explore using EdgeDB UI
 

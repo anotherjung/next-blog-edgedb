@@ -13,7 +13,7 @@
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.8",
-    "edgedb": "^1.0.1",
+    "edgedb": "^1.1.0",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.2",
     "next": "13.0.2",
@@ -22,6 +22,6 @@
     "typescript": "4.8.4"
   },
   "devDependencies": {
-    "@edgedb/generate": "^0.0.4"
+    "@edgedb/generate": "^0.0.8"
   }
 }

@@ -17,10 +17,10 @@
   dependencies:
     regenerator-runtime "^0.13.10"
 
-"@edgedb/generate@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@edgedb/generate/-/generate-0.0.4.tgz#52e96c84190df9070bb67e5820dd86e1649da83b"
-  integrity sha512-54Z0Z+kEDgATkpmm/Y1g4rdfzBB6waJeOCzkFYGJ6QENlnyjIo9fxKCxOJZM0FAF9n3VcCgZdsSgLFUjLiHh4g==
+"@edgedb/generate@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@edgedb/generate/-/generate-0.0.8.tgz#aecc5731d75a34ca8966c8733738f43b092f8264"
+  integrity sha512-kpRtFgxMkPs5wge4/JJB2uYnk7OUz+Vvyac+jPWiZWKdMEfLhO9tBS36gFrXzRHyox9B1D8sWLhfYOAK7JMvnQ==
   dependencies:
     chokidar "^3.5.3"
 
@@ -519,10 +519,10 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-edgedb@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/edgedb/-/edgedb-1.0.1.tgz#4745b3779d8bb5575c959705faa32d211008b284"
-  integrity sha512-kO1QR3K/Reg0N3Y2zwST/b59h57U/HI2O92dYt0xzWqPhatwvDS5jfV7NXELslgrvjMl91vCUira6SNgJn53Dw==
+edgedb@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/edgedb/-/edgedb-1.1.0.tgz#6304b139ae1eb886c757805fd2716ff6a2483d86"
+  integrity sha512-pRDJyHWHntAw1cJyOlkoNeWCHTUPU1tWlQpcEPGyHEBlfazYJHUpTShkmJ23oopjVTmlmGiSrfcsB74Tr5qo0w==
 
 emoji-regex@^9.2.2:
   version "9.2.2"
